@@ -1,0 +1,6 @@
+{
+  "name": "Carbon ROI Engine",
+  "description": "Discover the single most effective action you can take to reduce your carbon footprint, based on your lifestyle habits.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

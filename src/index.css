@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Calm & Premium Palette */
+  --color-forest: #163020;         /* Deep Forest Green */
+  --color-forest-light: #304d30;   /* Medium Sage-Forest */
+  --color-sage: #b6c4b6;           /* Soft Sage Green */
+  --color-sage-light: #eef0f0;     /* Extra light sage transition */
+  --color-gold: #d4af37;           /* Warm Gold Accord */
+  --color-accent-amber: #e6b010;
+  --color-offwhite: #faf9f6;       /* Premium Warm Alabaster Offsite Background */
+  --color-charcoal: #1f221f;       /* Dark charcoal typography */
+  --color-charcoal-muted: #5e665e; /* Softer text grey */
+}
+
+/* Custom fade effects and smooth scrolling */
+body {
+  background-color: var(--color-offwhite);
+  color: var(--color-charcoal);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+.scroller-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scroller-hidden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
