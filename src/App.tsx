@@ -47,6 +47,7 @@ import {
 } from 'lucide-react';
 import { AppStep, UserProfile, LifestyleData, Recommendation, ProgressLog } from './types';
 import { estimateCarbonFootprint, generateRecommendations } from './utils/engine';
+import { Analytics } from '@vercel/analytics/react';
 import { DEFAULT_EMISSION_FACTORS } from './config/emissionFactors';
 
 const STORAGE_KEYS = {
@@ -3574,6 +3575,7 @@ export default function App() {
           </div>
         )}
       </AnimatePresence>
+      <Analytics />
 
     </div>
   );
